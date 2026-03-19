@@ -9,17 +9,17 @@ interface Props {
   addResult: (result: TestResult) => void;
 }
 
-const taskTopics: Record<number, { topic: string; icon: string }> = {
-  1: { topic: "Системы счисления", icon: "🔢" },
-  2: { topic: "Информация и кодирование", icon: "💾" },
-  3: { topic: "Логика", icon: "🧩" },
-  4: { topic: "Алгоритмы (ветвление)", icon: "⚙️" },
-  5: { topic: "Алгоритмы (циклы)", icon: "🔁" },
-  6: { topic: "Файлы и файловые системы", icon: "📁" },
-  7: { topic: "Электронные таблицы", icon: "📊" },
-  8: { topic: "Компьютерные сети", icon: "🌐" },
-  9: { topic: "Расчёт объёма информации", icon: "🧮" },
-  10: { topic: "Программирование", icon: "💻" },
+const taskTopics: Record<number, { topic: string; icon: string; desc: string }> = {
+  1: { topic: "Алгоритм для исполнителя", icon: "🤖", desc: "Черепашка, Робот, числовые команды" },
+  2: { topic: "Количество информации", icon: "📊", desc: "Формула Хартли, мощность алфавита" },
+  3: { topic: "Системы счисления", icon: "🔢", desc: "Перевод чисел, арифметика в системах" },
+  4: { topic: "Файловая система", icon: "📁", desc: "Пути, маски поиска, расширения" },
+  5: { topic: "Электронные таблицы", icon: "📈", desc: "Формулы, функции СУММ, МАКС, ЕСЛИ" },
+  6: { topic: "Логические выражения", icon: "⚡", desc: "И, ИЛИ, НЕ, таблицы истинности" },
+  7: { topic: "Трассировка алгоритма", icon: "⚙️", desc: "Циклы, ветвления, псевдокод" },
+  8: { topic: "Кодирование. Объём файлов", icon: "💾", desc: "Текст, изображения, аудио" },
+  9: { topic: "Передача данных", icon: "🌐", desc: "Скорость, время, объём канала" },
+  10: { topic: "Базы данных", icon: "🗄️", desc: "Запросы, таблицы, условия выборки" },
 };
 
 export default function TaskSelectPage({ navigate, addResult }: Props) {
@@ -77,6 +77,7 @@ export default function TaskSelectPage({ navigate, addResult }: Props) {
                     <span className="text-xs text-[var(--text-secondary)]">{questions.length} заданий</span>
                   </div>
                   <h3 className="font-semibold text-[var(--text-primary)]">{info.topic}</h3>
+                  <p className="text-xs text-[var(--text-secondary)] mt-0.5">{info.desc}</p>
                 </div>
                 <Icon
                   name="ChevronRight"
