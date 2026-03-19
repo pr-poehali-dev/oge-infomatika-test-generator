@@ -22,8 +22,8 @@ export default function NavBar({ currentPage, navigate }: NavBarProps) {
           onClick={() => navigate("home")}
           className="flex items-center gap-2 font-bold text-[var(--accent-blue)] text-lg tracking-tight"
         >
-          <span className="text-xl">⚗️</span>
-          <span className="hidden sm:block">ХимОГЭ</span>
+          <span className="text-xl">💻</span>
+          <span className="hidden sm:block">ИнфОГЭ</span>
         </button>
 
         <nav className="flex items-center gap-1">

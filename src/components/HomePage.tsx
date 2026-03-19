@@ -47,14 +47,14 @@ export default function HomePage({ navigate }: HomePageProps) {
       <section className="text-center pt-14 pb-12">
         <div className="inline-flex items-center gap-2 bg-[var(--bg-blue)] text-[var(--accent-blue)] px-4 py-1.5 rounded-full text-sm font-medium mb-6">
           <Icon name="GraduationCap" size={15} />
-          Подготовка к ОГЭ по химии
+          Подготовка к ОГЭ по информатике
         </div>
         <h1 className="text-4xl sm:text-5xl font-bold text-[var(--text-primary)] leading-tight mb-4">
-          Выучи химию <br />
+          Выучи информатику <br />
           <span className="text-[var(--accent-blue)]">и сдай ОГЭ</span>
         </h1>
         <p className="text-[var(--text-secondary)] text-lg max-w-xl mx-auto mb-8 leading-relaxed">
-          Справочник, тесты и разбор заданий по всем темам ОГЭ. Тренируйся с реальными вопросами из банка ФИПИ.
+          Справочник, тесты и разбор заданий по всем темам ОГЭ по информатике. Тренируйся с реальными вопросами из банка ФИПИ.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
           <button
@@ -120,9 +120,9 @@ export default function HomePage({ navigate }: HomePageProps) {
         <h2 className="text-xl font-bold text-[var(--text-primary)] mb-4">Темы в справочнике</h2>
         <div className="flex flex-wrap gap-2">
           {[
-            "Строение атома", "Периодическая система", "Химическая связь",
-            "Классы веществ", "Типы реакций", "Ионный обмен",
-            "ОВР", "Качественные реакции", "Расчёты по формулам", "Расчёты по уравнениям"
+            "Системы счисления", "Информация и кодирование", "Логика",
+            "Алгоритмы", "Программирование", "Файлы и ФС",
+            "Электронные таблицы", "Компьютерные сети", "Расчёт объёма", "ОС и ПО"
           ].map((topic) => (
             <button
               key={topic}

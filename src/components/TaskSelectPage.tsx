@@ -10,16 +10,16 @@ interface Props {
 }
 
 const taskTopics: Record<number, { topic: string; icon: string }> = {
-  1: { topic: "Строение атома", icon: "⚛️" },
-  2: { topic: "Периодическая система", icon: "📊" },
-  3: { topic: "Химическая связь", icon: "🔗" },
-  4: { topic: "Классы веществ", icon: "🧪" },
-  5: { topic: "Типы реакций", icon: "⚗️" },
-  6: { topic: "Ионный обмен", icon: "⚡" },
-  7: { topic: "ОВР", icon: "🔄" },
-  8: { topic: "Качественные реакции", icon: "🔬" },
-  9: { topic: "Расчёты по формулам", icon: "🧮" },
-  10: { topic: "Расчёты по уравнениям", icon: "📐" },
+  1: { topic: "Системы счисления", icon: "🔢" },
+  2: { topic: "Информация и кодирование", icon: "💾" },
+  3: { topic: "Логика", icon: "🧩" },
+  4: { topic: "Алгоритмы (ветвление)", icon: "⚙️" },
+  5: { topic: "Алгоритмы (циклы)", icon: "🔁" },
+  6: { topic: "Файлы и файловые системы", icon: "📁" },
+  7: { topic: "Электронные таблицы", icon: "📊" },
+  8: { topic: "Компьютерные сети", icon: "🌐" },
+  9: { topic: "Расчёт объёма информации", icon: "🧮" },
+  10: { topic: "Программирование", icon: "💻" },
 };
 
 export default function TaskSelectPage({ navigate, addResult }: Props) {
@@ -52,7 +52,7 @@ export default function TaskSelectPage({ navigate, addResult }: Props) {
     <div className="max-w-3xl mx-auto px-4 py-8">
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-[var(--text-primary)] mb-1">Выбрать задание</h1>
-        <p className="text-[var(--text-secondary)]">Выберите номер задания — получите все 10 примеров этого типа из разных вариантов</p>
+        <p className="text-[var(--text-secondary)]">Выберите тему — получите все 10 примеров этого типа задания из разных вариантов</p>
       </div>
 
       <div className="grid sm:grid-cols-2 gap-4">

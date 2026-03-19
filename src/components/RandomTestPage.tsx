@@ -42,7 +42,7 @@ export default function RandomTestPage({ navigate, addResult }: Props) {
     <div className="max-w-3xl mx-auto px-4 py-8">
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-[var(--text-primary)] mb-1">Случайный вариант</h1>
-        <p className="text-[var(--text-secondary)]">10 заданий по всем темам ОГЭ по химии</p>
+        <p className="text-[var(--text-secondary)]">10 заданий по всем темам ОГЭ по информатике</p>
       </div>
 
       {/* Main CTA */}
@@ -85,7 +85,7 @@ export default function RandomTestPage({ navigate, addResult }: Props) {
       <div className="mt-8 bg-[var(--bg-card)] rounded-xl p-4 flex gap-3">
         <Icon name="Info" size={18} className="text-[var(--text-secondary)] shrink-0 mt-0.5" />
         <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-          В каждом варианте 10 заданий по разным темам: строение атома, периодическая система, химическая связь, классы веществ, реакции, ОВР и расчёты. Ответы пишете самостоятельно.
+          В каждом варианте 10 заданий по разным темам: системы счисления, кодирование, логика, алгоритмы, электронные таблицы, сети и расчёты. Ответы пишете самостоятельно.
         </p>
       </div>
     </div>
